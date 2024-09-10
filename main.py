@@ -58,14 +58,3 @@ conta_poupanca = ContaPoupanca("54321")
 conta_poupanca.depositar(500)
 conta_poupanca.sacar(100)
 print("Tarifa da conta poupança:", conta_poupanca.calcular_tarifa())
-
-class ContaUniversitaria(ContaBancaria):
-    def __init__(self, numero_conta, saldo=0, numero_transacoes=0):
-        super().__init__(numero_conta, saldo, numero_transacoes)
-
-    def calcular_tarifa(self):
-        return 0  # Conta universitária não possui tarifas
-conta_universitaria = ContaUniversitaria("98765")
-conta_universitaria.depositar(300)
-conta_universitaria.sacar(50)
-print("Tarifa da conta universitária:", conta_universitaria.calcular_tarifa())
